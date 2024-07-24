@@ -3,7 +3,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaSalesforce } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -14,10 +14,10 @@ const Navbar = () => {
         {/* <img src={logo} alt="logo" /> */}
       </div> 
       <div className="flex items-center justify-center gap-4 text-2xl">
-        < FaLinkedin />
-        < FaGithub />
-        < FaSquareXTwitter />
-        < FaInstagram />
+        <a href="https://www.linkedin.com/in/shishirsangu/" target="_blank" >< FaLinkedin /></a>
+        <a href="https://github.com/ShishirSangu" target="_blank">< FaGithub /></a>
+        <a href="https://x.com/Shishir_sangu" target="_blank">< FaSquareXTwitter /></a>
+        <a href="https://www.salesforce.com/trailblazer/shishirmp" target="_blank">< FaSalesforce /></a>
       </div>
     </nav>
   )
