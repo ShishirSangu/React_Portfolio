@@ -3,7 +3,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaSalesforce } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
         <a href="https://www.linkedin.com/in/shishirsangu/" target="_blank" >< FaLinkedin /></a>
         <a href="https://github.com/ShishirSangu" target="_blank">< FaGithub /></a>
         <a href="https://x.com/Shishir_sangu" target="_blank">< FaSquareXTwitter /></a>
-        <a href="https://www.salesforce.com/trailblazer/shishirmp" target="_blank">< FaSalesforce /></a>
+        <a href="https://leetcode.com/u/ShishirSangu/" target="_blank">< SiLeetcode /></a>
       </div>
     </nav>
   )

@@ -1,62 +1,97 @@
-import project1 from "../assets/projects/drowsi.png";
-import project2 from "../assets/projects/e-com.png";
-import project3 from "../assets/projects/profile_page.png";
-import project4 from "../assets/projects/project_4.png";
+export const HERO_CONTENT = `Backend Engineer with 2 years of experience designing and developing enterprise SaaS applications using Python, Django, Django REST Framework, PostgreSQL, and React.js. Experienced in building scalable REST APIs, database-per-tenant multi-tenant architectures, AI-powered workflows, CrewAI agents, RAG pipelines, vector databases, and microservices. Passionate about building scalable backend systems and solving complex engineering problems.`;
 
-export const HERO_CONTENT = `I am a fresher with strong knowledge in Java, Python, SQL, React, and JavaScript, alongside excellent problem-solving skills. Proficient in data structures, I am eager to apply my technical abilities to develop innovative solutions. My goal is to contribute to a dynamic team, leveraging my skills to drive business success and deliver exceptional user experiences. I am enthusiastic about learning new technologies and continuously improving my skills to stay at the forefront of industry advancements. I am committed to personal and professional growth, seeking opportunities to contribute meaningfully to my team and organization.`;
+export const ABOUT_TEXT = `I am a Backend Engineer at Infanion Software Solutions, Bengaluru, working across enterprise SaaS platforms built with Python, Django, Laravel, React.js, and PostgreSQL. My work spans backend architecture, REST API development, AI-powered automation with CrewAI agents and RAG pipelines, multi-tenant architectures, microservices, and third-party integrations like Microsoft Outlook OAuth. I have hands-on production experience — investigating live issues, optimizing PostgreSQL queries, building queue-based background processing, and supporting enterprise releases. I hold a B.E. in Information Science & Engineering and enjoy solving complex engineering problems while continuously exploring new technologies in backend systems and AI.`;
 
-export const ABOUT_TEXT = `As a fresher with comprehensive training in Java Full Stack development and hands-on experience through an E-commerce Marketing internship, I am eager to apply my skills as a Java developer. My background includes a Salesforce developer internship, reinforcing my capability in both Java and Salesforce ecosystems. I am committed to continuous learning and utilizing emerging technologies to drive innovative solutions. My proficiency in Java, Python, SQL, and data structures, combined with my problem-solving abilities, prepares me to contribute effectively to a dynamic development team. I am enthusiastic about taking on challenging roles in software development and data analysis, aiming to deliver impactful results and grow professionally. I aspire to work in a collaborative environment where I can enhance my skills, contribute to innovative projects, and be part of a forward-thinking organization dedicated to excellence.`;
-
-export const INTERNSHIP = [
+export const EXPERIENCES = [
   {
-    year: "2021/Oct - 2021/Dec ",
-    role: "Full Stack Developer Internship",
-    company: "10Seconds.",
-    description: `I completed an internship at 10 Seconds as a Java Full Stack Developer, working with Java Spring Boot, MySQL, HTML, and CSS. During this internship, I developed an e-commerce application that included adding, deleting, updating products, and performing CRUD operations.`,
-    technologies: ["Java", "Spring boot", "HTML", "CSS", "JS", "MySql"],
-  },
-  {
-    year: "2023/Oct - 2024/Jan",
-    role: "Salesforce Developer Internship",
-    company: "SmartInterz",
-    description: `During an 8-week virtual internship(Nov-Dec 2023), I completed various Salesforce Trailhead modules, including Salesforce Fundamentals, Organizational Setup, and Relationship & Process Automation. I gained proficiency in Apex, Testing & Debugging, VS Code Setup, CLI Setup, LWC, and API. Additionally, I earned the Developer Super Set certification.`,
-    technologies: ["Apex", "SOQL", "CLI setup", "LWC", "Traihead"],
+    year: "Sep 2024 - Present",
+    role: "Associate Developer",
+    company: "Infanion Software Solutions, Bengaluru",
+    description: `Working as a Full Stack Developer across enterprise SaaS platforms involving Python, Django, Laravel, React.js, PostgreSQL, AI-powered automation, multi-tenant architectures, microservices, REST APIs, and third-party integrations. Contributed to backend architecture, AI workflows (CrewAI agents, RAG, multi-LLM orchestration), production support, PostgreSQL optimization, queue-based background processing, and enterprise application development across three major projects — The Fraim AI, Absolute Jobs, and Maxicon.`,
+    technologies: [
+      "Python",
+      "Django",
+      "DRF",
+      "Laravel",
+      "PostgreSQL",
+      "React.js",
+      "CrewAI",
+      "Docker",
+    ],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "Drowsiness Detection System",
-    image: project1,
+    title: "The Fraim AI — AI-Powered Multi-Tenant SaaS Platform",
     description:
-      "In my 4th year of engineering, I worked on a drowsiness detection project with a group of four members.Using OpenCV, our system captured webcam images and used a Deep Learning model to classify eye states. If closed eyes were detected for a few seconds, the system alerted the driver, demonstrated live with real-time detection.",
-    technologies: ["Python", "HTML", "CSS", "JavaScript", "Flask"],
+      "A multi-tenant SaaS platform that lets organizations build AI-powered workflows using configurable AI agents, RAG, and multiple LLMs. Designed and implemented a database-per-tenant architecture with runtime tenant routing and automated provisioning. Built configurable CrewAI agents, an end-to-end RAG pipeline with LangChain and Qdrant, a WebSocket-based conversational chatbot with human-in-the-loop workflows, and multi-LLM integration with GPT-4o, Claude, AWS Bedrock, and Mistral.",
+    technologies: [
+      "Python",
+      "Django",
+      "DRF",
+      "CrewAI",
+      "LangChain",
+      "Qdrant",
+      "OpenAI",
+      "Claude",
+      "AWS Bedrock",
+      "PostgreSQL",
+      "WebSockets",
+      "React.js",
+    ],
   },
   {
-    title: "E-Commerce Website",
-    image: project2,
+    title: "Absolute Jobs — Recruitment Management Platform (Production)",
     description:
-      "I recently created a simple web application using React, Java, Spring Boot, and H2 database. The application allows users to add and delete products, check product availability, manage product categories, and view the price of products in USD. It's designed to function like an e-commerce application.",
-    technologies: ["java", "Spring boot", "HTML", "CSS", "React", "H2"],
+      "A production recruitment platform built on a microservices architecture, covering candidate management, company onboarding, payroll, interview scheduling, and AI-powered recruitment workflows. Built a reusable Microsoft Outlook OAuth 2.0 integration with refresh token management, converted long-running exports to asynchronous queue-based processing, implemented AI-powered recruitment content generation using OpenAI, and optimized PostgreSQL performance through indexing, EXPLAIN ANALYZE, and N+1 query elimination. Provided end-to-end production support including RCA, data correction, and release deployments.",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "PostgreSQL",
+      "React.js",
+      "Django",
+      "FastAPI",
+      "OAuth 2.0",
+      "Laravel Queues",
+      "Supervisor",
+      "OpenAI",
+      "Docker",
+    ],
   },
   {
-    title: "Profile Page Web Application",
-    image: project3,
+    title: "Maxicon — Enterprise Workforce Management Platform",
     description:
-      "This web application allows users to register, login, and update their profiles. Developed with html, css and javascript for the frontend, java for the backend, and mysql for the database, and hosted on AWS for accessibility and scalability",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Java", "phpMyAdmin"],
+      "An enterprise workforce management platform supporting project planning, employee management, multilingual document generation, and reporting. Developed backend and frontend features across business modules, built legacy data migration workflows with mapping, validation, and import mechanisms, implemented internationalization allowing administrators to manage translations without code changes, and drove performance optimization using API Gateway execution metrics.",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "PostgreSQL",
+      "React.js",
+      "TypeScript",
+      "Python",
+      "Docker",
+      "REST APIs",
+    ],
   },
   {
-    title: "COVID19 Testing Management System",
-    image: project4,
+    title: "Task Management System (Personal Project)",
     description:
-      "In my 3rd year of engineering, I worked on a Covid19 Testing Management System project with a group of three members using Apache Web Server, PHP, and MySQL. I wrote SQL queries to manage the database efficiently, enabling healthcare professionals to access, update, and analyze data. This facilitated informed decision-making in healthcare.",
-    technologies: ["HTML", "CSS", "php", "mySQL"],
+      "A full-stack task management application built with production-oriented architecture. Developed REST APIs using Django REST Framework, configured a Dockerized development environment, integrated PostgreSQL, designed a modular backend following production-ready practices, and built a React.js frontend. Currently implementing JWT-based authentication and Role-Based Access Control (RBAC), with background job processing planned.",
+    technologies: [
+      "Python",
+      "Django",
+      "DRF",
+      "PostgreSQL",
+      "Docker",
+      "React.js",
+      "JWT",
+    ],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
+  address: "Bengaluru, India",
   phoneNo: "+91 95383 98740",
   email: "sangameshshishir@gmail.com",
 };
