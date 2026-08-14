@@ -1,6 +1,6 @@
 import { RiReactjsLine } from "react-icons/ri"
 import { FaPython, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
-import { SiDjango, SiFastapi, SiOpenai, SiLaravel, SiTypescript, SiCelery } from "react-icons/si";
+import { SiDjango, SiFastapi, SiOpenai, SiTypescript, SiCelery } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { motion } from "framer-motion"
 
@@ -25,7 +25,6 @@ const TECHNOLOGIES = [
     { Icon: RiReactjsLine, color: "text-cyan-400", duration: 6, name: "React" },
     { Icon: SiTypescript, color: "text-blue-400", duration: 4, name: "TypeScript" },
     { Icon: SiOpenai, color: "text-neutral-200", duration: 3.5, name: "OpenAI" },
-    { Icon: SiLaravel, color: "text-red-500", duration: 2.8, name: "Laravel" },
     { Icon: SiCelery, color: "text-lime-500", duration: 4.5, name: "Celery" },
     { Icon: FaDocker, color: "text-blue-300", duration: 5.5, name: "Docker" },
     { Icon: FaAws, color: "text-orange-400", duration: 3.2, name: "AWS" },
