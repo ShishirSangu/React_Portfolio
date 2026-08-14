@@ -23,7 +23,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "The Fraim AI — AI-Powered Multi-Tenant SaaS Platform",
+    title: "— AI-Powered Multi-Tenant SaaS Platform",
     description:
       "A multi-tenant SaaS platform that lets organizations build AI-powered workflows using configurable AI agents, RAG, and multiple LLMs. Designed and implemented a database-per-tenant architecture with runtime tenant routing and automated provisioning. Built configurable CrewAI agents, an end-to-end RAG pipeline with LangChain and Qdrant, a WebSocket-based conversational chatbot with human-in-the-loop workflows, and multi-LLM integration with GPT-4o, Claude, AWS Bedrock, and Mistral.",
     technologies: [
@@ -42,7 +42,7 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Absolute Jobs — Recruitment Management Platform (Production)",
+    title: "— Recruitment Management Platform (Production)",
     description:
       "A production recruitment platform built on a microservices architecture, covering candidate management, company onboarding, payroll, interview scheduling, and AI-powered recruitment workflows. Built a reusable Microsoft Outlook OAuth 2.0 integration with refresh token management, converted long-running exports to asynchronous queue-based processing, implemented AI-powered recruitment content generation using OpenAI, and optimized PostgreSQL performance through indexing, EXPLAIN ANALYZE, and N+1 query elimination. Provided end-to-end production support including RCA, data correction, and release deployments.",
     technologies: [
@@ -60,7 +60,7 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Maxicon — Enterprise Workforce Management Platform",
+    title: "— Enterprise Workforce Management Platform",
     description:
       "An enterprise workforce management platform supporting project planning, employee management, multilingual document generation, and reporting. Developed backend and frontend features across business modules, built legacy data migration workflows with mapping, validation, and import mechanisms, implemented internationalization allowing administrators to manage translations without code changes, and drove performance optimization using API Gateway execution metrics.",
     technologies: [
